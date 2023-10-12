@@ -27,7 +27,6 @@ class HomeController extends Controller
         // dd($path);
         $files = File::allFiles($path); 
 
-        dd($files);
 
         return view('frontEnd.page.home',  compact('listNews', 'listProduct', 'files'));
 
